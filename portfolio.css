@@ -432,7 +432,10 @@ nav .fas {
   }
 
   .sub-tittle {
-    font-size: 24px; /* Further reduce subtitle size */
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   .tab-links {
@@ -459,4 +462,53 @@ nav .fas {
   .tab-contents ul li span {
     font-size: 10px; /* Reduce the font size of tab content */
   }
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    height: 70vh; /* Reduce the height for better view on tablets */
+    background-size: contain; /* Ensure the image fits without cutting off */
+  }
+  #typing-text{
+    font-size: 25px;
+  }
+  .contact-left p{
+    margin-top: 30px;
+    width: 400px;
+  }
+  .top{
+    position: fixed;
+    bottom: 3rem;
+    margin-left: 90%;
+    
+  }
+  .sub-tittle {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+
+/* For mobile screens (less than 480px) */
+@media screen and (max-width: 480px) {
+  #header {
+    height: 50vh; /* Reduce height for mobile */
+    background-size: cover;
+    background-position: top; /* Focus the top portion of the image */
+  }
+  .top{
+    position: fixed;
+    bottom: 3rem;
+    margin-left: 90%;
+    
+  }
+  #typing-text{
+    font-size: 25px;
+  }
+}
+.contact-left p{
+ width: 400px;
+  margin-top: 30px;
+}
 }
